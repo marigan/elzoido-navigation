@@ -1,0 +1,16 @@
+{
+  "name": "elzoido-navigation",
+  "version": "0.1.0",
+  "main": "dist/elzoido-navigation.js",
+  "license": "GPL-3.0+",
+  "dependencies": {
+    "angular": ">=1.2.10",
+    "lodash": "~2.4.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "overrides": {}
+}
