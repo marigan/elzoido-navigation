@@ -17,7 +17,7 @@
 #
 # Authors: Michal Mocnak <michal@marigan.net>
 
-angular.module('elzoido.navigation').controller 'NavigationCtrl', ($scope) ->
+angular.module('elzoido.navigation').controller 'NavigationCtrl', ($scope, $location) ->
   # help function for selection identification
   $scope.selected = (item) ->
     (_.isEqual($location.path(), item.url)) ? true : (_.isEqual(item.url, "/") ? false : $location.path().indexOf(item.url) > -1)
