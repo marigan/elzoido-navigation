@@ -17,10 +17,17 @@
 #
 # Authors: Michal Mocnak <michal@marigan.net>
 
-angular.module('elzoido.navigation').directive 'navigation', ->
-  restrict: 'E'
+angular.module('elzoido.navigation').directive 'elzoidoNavigation', ->
+  restrict: 'A'
   transclude: true
-  scope: {}
-  controller: 'NavigationCtrl'
-  templateUrl: "partials/navigation.html"
+  scope:
+    tree: '&elzoidoNavigation'
+  link: ($scope) ->
+    # initial check for navigation structure
+    $scope.navigation = if _.isEmpty($scope.tree()) then [{name: 'home', title: 'Home', url: '/'}] else $scope.tree()
+  controller: ($scope, $location) ->
+    # help function for selection identification
+    $scope.selected = (item) ->
+      (_.isEqual($location.path(), item.url)) ? true : (_.isEqual(item.url, "/") ? false : $location.path().indexOf(item.url) > -1)
+  templateUrl: 'partials/navigation.html'
   replace: false

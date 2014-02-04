@@ -10,7 +10,20 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "test",
+    "tests"
   ],
-  "overrides": {}
+  "homepage": "http://github.com/marigan/elzoido-navigation",
+  "authors": [
+    "Michal Mocnak <michal@marigan.net>"
+  ],
+  "description": "AngularJS Navigation Directive",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "navigation"
+  ],
+  "private": true
 }

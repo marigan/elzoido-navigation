@@ -27,6 +27,8 @@ exports.config =
     javascripts:
       joinTo:
         'elzoido-navigation.js': /^app/
+      order:
+        before: 'app/scripts/module.coffee'
 
     templates:
       joinTo:
