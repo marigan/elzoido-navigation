@@ -1,6 +1,6 @@
 {
   "name": "elzoido-navigation",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "dist/elzoido-navigation.js",
   "license": "GPL-3.0+",
   "dependencies": {
@@ -8,11 +8,15 @@
     "lodash": "~2.4.1"
   },
   "ignore": [
+    ".*",
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "app",
+    "config.coffee",
+    "package.json"
   ],
   "homepage": "http://github.com/marigan/elzoido-navigation",
   "authors": [

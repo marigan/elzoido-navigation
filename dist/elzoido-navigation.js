@@ -1,6 +1,6 @@
 /**
  * @license
- * elzoido-navigation 0.1.1
+ * elzoido-navigation 0.1.2
  * (c) 2014 marigan.net
  * License: GPL-3.0+
  */
