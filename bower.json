@@ -1,6 +1,6 @@
 {
   "name": "elzoido-navigation",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/elzoido-navigation.js",
   "license": "GPL-3.0+",
   "dependencies": {

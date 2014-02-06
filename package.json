@@ -2,7 +2,7 @@
   "name": "elzoido-navigation",
   "description": "AngularJS navigation directive",
   "author": "Michal Mocnak",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repository": "",
   "dependencies": {
     "javascript-brunch": "~1.6.0",

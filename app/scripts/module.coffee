@@ -17,4 +17,10 @@
 #
 # Authors: Michal Mocnak <michal@marigan.net>
 
-angular.module('elzoido.navigation', [])
+angular.module('elzoido.navigation', []).constant 'elzoidoNavigation',
+  # all those need to be implemented in the application
+  config:
+    navigationTree:
+      name: 'home'
+      title: 'Home'
+      url: '/'
