@@ -21,9 +21,9 @@ angular.module('elzoido.navigation').directive 'elzoidoNavigation', ->
   restrict: 'A'
   transclude: true
   scope: {}
-  controller: ($scope, $location, elzoidoNavigation) ->
+  controller: ($scope, $location, elzoidoNavigationModule) ->
     # setun navigation tree
-    $scope.navigation = elzoidoNavigation.config.navigationTree
+    $scope.navigation = elzoidoNavigationModule.config.navigationTree
     # help function for selection identification
     $scope.selected = (item) ->
       (_.isEqual($location.path(), item.url)) ? true : (_.isEqual(item.url, "/") ? false : $location.path().indexOf(item.url) > -1)

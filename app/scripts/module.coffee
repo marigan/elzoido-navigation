@@ -17,7 +17,7 @@
 #
 # Authors: Michal Mocnak <michal@marigan.net>
 
-angular.module('elzoido.navigation', []).constant 'elzoidoNavigation',
+angular.module('elzoido.navigation', []).constant 'elzoidoNavigationModule',
   # all those need to be implemented in the application
   config:
     navigationTree:
